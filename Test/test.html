@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<style>
+			body {width:380px;}
+		</style>
+	</head>
+
+
+	<body>
+
+		<h1 id="Title">我的第一个扩展</h1>
+		
+		
+		
+		
+		
+		
+		<!--    
+		body,div,p,ul,li,font,span,td,th{    
+		font-size:10pt;    
+		line-height:155%;    
+		}    
+		table{    
+		border-top-width: 1px;    
+		border-right-width: 1px;    
+		border-bottom-width: 0px;    
+		border-left-width: 1px;    
+		border-top-style: solid;    
+		border-right-style: solid;    
+		border-bottom-style: none;    
+		border-left-style: solid;    
+		border-top-color: #CCCCCC;    
+		border-right-color: #CCCCCC;    
+		border-bottom-color: #CCCCCC;    
+		border-left-color: #CCCCCC;    
+		}    
+		td{    
+		border-bottom-width: 1px;    
+		border-bottom-style: solid;    
+		border-bottom-color: #CCCCCC;    
+		}    
+		.EditCell_TextBox {    
+		width: 90%;    
+		border:1px solid #0099CC;    
+		}    
+		.EditCell_DropDownList {    
+		width: 90%;    
+		}    
+		-->  
+		
+		<form id="form1" name="form1" method="post" action="">    
+			<h3>URL List</h3>    
+			<table width="300" border="0" cellpadding="0" cellspacing="0" id="table1" border="1">    
+				<tr>    
+				  <td width="32" align="center" bgcolor="#EFEFEF" Name="checkbox0"><input type="checkbox" name="checkbox" value="checkbox" /></td>    
+				  <td width="80" bgcolor="#EFEFEF" Name="Num" EditType="TextBox">#</td>    
+				  <td width="220" bgcolor="#EFEFEF" Name="Url" EditType="TextBox">URL</td>    
+				</tr>    
+				<tr>    
+				  <td align="center" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox1" value="checkbox" /></td>    
+				  <td bgcolor="#FFFFFF"></td>    
+				  <td bgcolor="#FFFFFF"></td>     
+				</tr>    
+				<tr>    
+				  <td align="center" bgcolor="#FFFFFF"><input type="checkbox" name="checkbox2" value="checkbox" /></td>    
+				  <td bgcolor="#FFFFFF"></td>    
+				  <td bgcolor="#FFFFFF"></td>    
+				</tr>    
+			</table>    
+			
+		<br />    
+		<input type="button" name="Submit1" value="Add" onclick="AddRow(document.getElementById('tabProduct'),1)" />    
+		<input type="button" name="Submit2" value="Delete" onclick="DeleteRow(document.getElementById('tabProduct'),1)" />    
+		<input type="button" name="Submit3" value="Reset" onclick="window.location.reload()" />    
+		<input type="submit" name="Submit4" value="Submit" onclick="GetTableData(document.getElementById('tabProduct'));return false;" />    
+		</form>   
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<button type="button" onclick="updateIcon()">Click</button>
+
+		
+		
+		<script>
+			
+			function updateIcon() {
+			  document.getElementById("Title").innerHTML="啦啦啦！！！";
+			}
+
+		</script>
+
+
+		<script src="test.js"></script>
+
+
+
+	</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模拟时钟</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #blockDial {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 50%;
+            position: relative;
+            background-color: coral;
+        }
+
+        .heart {
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            margin: 95px auto;
+            border-radius: 50%;
+        }
+
+        .blockwise {
+            width: 2px;
+            height: 80px;
+            background-color: black;
+            position: absolute;
+            left: 99px;
+            top: 20px;
+            z-index: 10;
+        }
+        .secondHand{
+            width: 2px;
+            height: 50px;
+            background-color: black;
+            position: absolute;
+            left: 99px;
+            top: 50px;
+            z-index: 10;
+        }
+        .minuteHand{
+            width: 2px;
+            height: 65px;
+            background-color: black;
+            position: absolute;
+            left: 99px;
+            top: 35px;
+            z-index: 10;
+        }
+        #currentTime{
+            width: 120px;
+            height: 30px;
+            border: 1px solid black;
+            margin: 10px 40px;
+            text-align: center;
+            line-height: 30px;
+        }
+        .num{
+            font-size: 24px;
+            color: aqua;
+            position: absolute;
+        }
+        .num3{
+            top:42%;
+            left: 90%;
+        }
+        .num6{
+            top:86%;
+            left: 46%;
+        }
+        .num9{
+            top:42%;
+            left: 0;
+        }
+        .num12{
+            top:0;
+            left: 44%;
+        }
+    </style>
+</head>
+<body>
+<div id="blockDial">
+    <div class="heart"></div>
+    <div class="blockwise"></div>
+    <div class="secondHand"></div>
+    <div class="minuteHand"></div>
+    <div class="num num3">3</div>
+    <div class="num num6">6</div>
+    <div class="num num9">9</div>
+    <div class="num num12">12</div>
+</div>
+<div id="currentTime"></div>
+<script src="test5.js"></script>
+</body>
+</html>
+
+html

@@ -1,0 +1,18 @@
+<script type="text/javascript">
+function addItem() {
+ var myitem = document.getElementById("ItemToAdd").value;
+ var mylistItems = document.getElementById("mylist");
+ var newP = document.createElement("li");
+ var textNode = document.createTextNode(myitem);
+ newP.appendChild(textNode);
+ document.getElementById("mylist").appendChild(newP);
+ return false;
+}
+</script>
+<form onsubmit="return addItem()" action="#">
+<span>Grocery Items:</span>
+<input type="text" id="ItemToAdd" value="Milk" />
+<input type="button" value="Add" onclick="addItem()" />
+</form>
+<span>Grocery List:</span>
+<ol id="mylist"></ol>
